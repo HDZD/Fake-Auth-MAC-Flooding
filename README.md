@@ -1,4 +1,4 @@
-# Fake-Auth-WiFi-DOS
+# Fake-Auth-MAC-Flooding
 A Denial Of Service attack targeting wifi networks through flooding the wifi network with authentication requests using fake mac addresses
 
 
